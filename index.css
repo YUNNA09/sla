@@ -1,0 +1,26 @@
+ 
+  
+<form>  
+<label for="username">Username:</label>  
+<input name="username" id="username" type="text"><br><br>  
+<label for="password">Password:</label>  
+<input name="password" id="password" type="password"><br><br>  
+<input value="Login" type="submit">  
+</form>  
+
+
+const express = require('express');  
+const app = express();  
+const bcrypt = require('bcrypt');  
+
+app.post('/login', (req, res) =&gt; {  
+const { username, password } = req.body;  
+// Validate user input  
+// Check if user exists in database  
+// Hash password and compare with stored hash  
+// Return error or redirect to dashboard  
+});  
+
+app.listen(3000, () =&gt; {  
+console.log('Server started on port 3000');  
+});  
